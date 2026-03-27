@@ -25,7 +25,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 
   const signup = (name: string, email: string, password: string) => {
     const users = JSON.parse(localStorage.getItem("users_db") || "[]");
-    if (users.find((u: any) => u.email === email)) return false;
+    if (users.find((u: { email: string }) => u.email === email)) return false;
     users.push({ name, email, password });
     localStorage.setItem("users_db", JSON.stringify(users));
     const u = { name, email };
@@ -36,7 +36,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 
   const login = (email: string, password: string) => {
     const users = JSON.parse(localStorage.getItem("users_db") || "[]");
-    const found = users.find((u: any) => u.email === email && u.password === password);
+   const found = users.find((u: { email: string; password: string }) => u.email === email && u.password === password);
     if (!found) return false;
     const u = { name: found.name, email: found.email };
     setUser(u);

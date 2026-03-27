@@ -18,7 +18,7 @@ const ScatterGrid = ({ children, className = "" }: ScatterGridProps) => {
         rotate: (Math.random() - 0.5) * 50,
         scale: 0.5 + Math.random() * 0.3,
       })),
-    [children.length]
+    [children.length] 
   );
 
   return (
