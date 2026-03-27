@@ -1,9 +1,10 @@
 import { FlaskConical, Calculator, Palette, BookOpen, Globe, Award, Scale, Cpu, Music, Dumbbell, Microscope, Languages, Camera, Heart, Building2, Leaf, Brain, Rocket, Theater, Shield } from "lucide-react";
+import { LucideIcon } from "lucide-react";
 
 export interface Program {
   slug: string;
   name: string;
-  icon: any;
+  icon: LucideIcon;
   shortDesc: string;
   duration: string;
   degree: string;
