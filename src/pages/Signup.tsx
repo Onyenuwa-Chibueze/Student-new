@@ -36,8 +36,8 @@ const Signup = () => {
   };
 
   const fields = [
-    { id: "name", label: "Full Name", type: "text", icon: User, value: name, setter: setName, placeholder: "Valerian Smith" },
-    { id: "email", label: "Email", type: "email", icon: Mail, value: email, setter: setEmail, placeholder: "admin@pinnacle.edu" },
+    { id: "name", label: "Full Name", type: "text", icon: User, value: name, setter: setName, placeholder: "Enter your full name" },
+    { id: "email", label: "Email", type: "email", icon: Mail, value: email, setter: setEmail, placeholder: "Enter your email" },
     { id: "password", label: "Password", type: "password", icon: Lock, value: password, setter: setPassword, placeholder: "••••••••", minLength: 6 },
   ];
 
