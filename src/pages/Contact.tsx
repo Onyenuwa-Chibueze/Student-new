@@ -55,7 +55,7 @@ const Contact = () => {
               </div>
               <div className="space-y-5">
                 {[
-                  { icon: MapPin, label: "Address", value: "Woman  lecture okpuno Awka" },
+                  { icon: MapPin, label: "Address", value: "Woman  Lecture Okpuno Awka" },
                   { icon: Phone, label: "Phone", value: "08155804562" },
                   { icon: Mail, label: "Email", value: "admissions@pinnacle.edu" },
                 ].map((item) => (
