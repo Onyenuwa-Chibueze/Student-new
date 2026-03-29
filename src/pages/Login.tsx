@@ -97,7 +97,7 @@ const Login = () => {
                     onChange={(e) => setEmail(e.target.value)}
                     onFocus={() => setFocused("email")}
                     onBlur={() => setFocused(null)}
-                    placeholder="admin@pinnacle.edu" required
+                    placeholder="Enter your email" required
                     className="pl-10 transition-all duration-200 focus:ring-2 focus:ring-accent/30"
                   />
                 </div>
