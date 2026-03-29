@@ -48,7 +48,7 @@ const AddStudent = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label htmlFor="name">Full Name</Label>
-                <Input id="name" value={name} onChange={(e) => setName(e.target.value)} placeholder="John Doe" required />
+                <Input id="name" value={name} onChange={(e) => setName(e.target.value)} placeholder="Student Name" required />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="regNumber">Registration Number</Label>
@@ -56,15 +56,15 @@ const AddStudent = () => {
               </div>
               <div className="space-y-2">
                 <Label htmlFor="email">Email Address</Label>
-                <Input id="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="student@university.edu" required />
+                <Input id="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email Address" required />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="phone">Phone Number</Label>
-                <Input id="phone" type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="+1 234 567 8900" required />
+                <Input id="phone" type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Phone Number" required />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="age">Age</Label>
-                <Input id="age" type="number" min={1} max={100} value={age} onChange={(e) => setAge(e.target.value)} placeholder="20" required />
+                <Input id="age" type="number" min={1} max={100} value={age} onChange={(e) => setAge(e.target.value)} placeholder="Age" required />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="gender">Gender</Label>
