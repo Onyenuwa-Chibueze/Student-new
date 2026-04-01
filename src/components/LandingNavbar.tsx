@@ -7,7 +7,7 @@ export const LandingNavbar = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+    <nav className="fixed w-full top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container flex items-center justify-between h-16 px-4">
         <Link to="/" className="flex items-center gap-2 font-display text-xl text-foreground">
           <GraduationCap className="w-6 h-6 text-accent" />
